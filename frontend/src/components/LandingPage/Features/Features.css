@@ -1,0 +1,25 @@
+.main{
+    background-color: #1c1026;
+    padding-bottom: 20;
+}
+.title{
+    color: #7a748c;
+    font-size: 40;
+    text-align: center;
+    margin-top: 5;
+}
+.mainText{
+    color: #1c1026;
+    font-size: 40;
+    text-align: left;
+}
+.featureTitleText{
+    color: #1c1026;
+    font-size: 40;
+    text-align: left;
+    margin-right: 5;
+}
+.inRow{
+    display: flex;
+    flex-direction: row;
+}
