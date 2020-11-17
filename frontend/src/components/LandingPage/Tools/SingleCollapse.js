@@ -8,19 +8,22 @@ function SingleCollapse(props) {
     const toggle = () => setIsOpen(!isOpen);
     
     return(
-    <div>
-        <Button color="secondary" onClick={toggle} style={{ marginBottom: 10 }}>
+    <div className = "spaceBackground1">
+        <Button className="spaceColorButton1" onClick={toggle} style={{ marginBottom: 10 }}>
             {props.name}
         </Button>
         <Collapse isOpen={isOpen}>
-            <Card>
+            <Card className = "spaceBackground2">
                 <CardBody>
-                    <p className="text-primary">
-                        {props.info}
-                    </p>
+                    {props.info.split("\n").map(phrase => (
+                        <p className="creamText">
+                            {phrase}
+                        </p>  
+                    ))}
+
                 </CardBody>
             </Card>
-      </Collapse>
+    </Collapse>
     </div>
     )
 }
