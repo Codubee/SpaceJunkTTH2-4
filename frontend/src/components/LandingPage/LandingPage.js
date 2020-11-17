@@ -5,7 +5,7 @@ import Explanation from './Explanation/Explanation'
 function LandingPage(){
     return(
         //Use components that you import here
-        <Explanation></Explanation>
+        <Explanation/>
 
     )
 }
