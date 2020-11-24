@@ -9,7 +9,7 @@ function Tools(props) {
         <div class = "container">
             {/*Takes each Tool object in the array and creates a single collapse component*/}
                 {props.toolsList.map(tool => (
-                    <SingleCollapse name = {tool.name} info = {tool.info}/>  
+                    <SingleCollapse name = {tool.name} info = {tool.description}/>  
                 ))}
         </div>
        
