@@ -1,9 +1,12 @@
 import React from 'react';
 import { Card, CardBody, CardTitle, CardText, CardLink, 
         CardImg, CardImgOverlay } from 'reactstrap';
-import spaceBG from '../../../space.jpg';
-import GitHub from '../../../whiteGithub.png'
+//import spaceBG from '../../../../public/space.jpg';
+//import GitHub from '../../../../public/whiteGithub.png'
 import './TeamComponent.css'
+
+const spaceBG = '/space.jpg';
+const GitHub = '/whiteGithub.png';
 
 function TeamCard(props) {
 
