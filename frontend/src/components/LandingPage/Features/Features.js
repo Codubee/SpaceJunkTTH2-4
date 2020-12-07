@@ -1,12 +1,12 @@
 import React from 'react';
-import { Media, Button } from 'reactstrap';
-import { Text } from 'react';
+import { Media} from 'reactstrap';
 import './Features.css'
-import spacePic from './spacepic.jpg';
-import musicPic from './musicpic.jpg';
-import newsPic from './newspic.jpg';
-import weatherPic from './weatherpic.jpg';
-import factPic from './factpic.jpg';
+
+const spacePic = '/spacepic.jpg';
+const musicPic = '/musicpic.jpg';
+const newsPic = '/newspic.jpg';
+const weatherPic = '/weatherpic.jpg';
+const factPic = '/factpic.jpg';
 
 var picStyle = {
     maxWidth: "128px",
@@ -33,10 +33,9 @@ function Features() {
             <h1 className='title'>Features</h1>
 
             <div className='inRow'>
-
-                <Media style={mediaStyle}>
+                <Media className='mediaStyle'>
                     <Media left href="#">
-                        <Media style={picStyle} object src={spacePic} alt="space picture example" />
+                        <Media className='picStyle' object src={spacePic} alt="space picture example" />
                     </Media>
                     <Media body>
                         <Media heading>
@@ -46,9 +45,9 @@ function Features() {
                     </Media>
                 </Media>
 
-                <Media style={mediaStyle}>
+                <Media className='mediaStyle'>
                     <Media left href="#">
-                        <Media style={picStyle} object src={musicPic} alt="music picture example" />
+                        <Media className='picStyle' object src={musicPic} alt="music picture example" />
                     </Media>
                     <Media body>
                         <Media heading>
@@ -62,9 +61,9 @@ function Features() {
 
             <div className='inRow'>
 
-                <Media style={mediaStyle}>
+                <Media className='mediaStyle'>
                     <Media left href="#">
-                        <Media style={picStyle} object src={newsPic} alt="space picture example" />
+                        <Media className='picStyle' object src={newsPic} alt="space picture example" />
                     </Media>
                     <Media body>
                         <Media heading>
@@ -74,9 +73,9 @@ function Features() {
                     </Media>
                 </Media>
 
-                <Media style={mediaStyle}>
+                <Media className='mediaStyle'>
                     <Media left href="#">
-                        <Media style={picStyle} object src={weatherPic} alt="music picture example" />
+                        <Media className='picStyle' object src={weatherPic} alt="music picture example" />
                     </Media>
                     <Media body>
                         <Media heading>
@@ -86,9 +85,9 @@ function Features() {
                     </Media>
                 </Media>
 
-                <Media style={mediaStyle}>
+                <Media className='mediaStyle'>
                     <Media left href="#">
-                        <Media style={picStyle} object src={factPic} alt="space picture example" />
+                        <Media className='picStyle' object src={factPic} alt="space picture example" />
                     </Media>
                     <Media body>
                         <Media heading>
