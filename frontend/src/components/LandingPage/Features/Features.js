@@ -8,25 +8,6 @@ const newsPic = '/newspic.jpg';
 const weatherPic = '/weatherpic.jpg';
 const factPic = '/factpic.jpg';
 
-var picStyle = {
-    maxWidth: "128px",
-    maxHeight: "128px",
-    minHeight: "128px",
-    marginRight: 5,
-    borderTopLeftRadius: 20,
-    borderBottomLeftRadius: 20,
-};
-
-var mediaStyle = {
-    flex: 1,
-    marginLeft: 15,
-    marginTop: 10,
-    backgroundColor: "#7a748c",
-    borderRadius: 20,
-    marginRight: 15,
-    marginBottom: 10,
-};
-
 function Features() {
     return (
         <div className='main'>
