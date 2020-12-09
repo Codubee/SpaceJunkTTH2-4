@@ -1,12 +1,15 @@
 import React from 'react'
 import Explanation from './Explanation/Explanation'
+import TeamComponent from './TeamComponent/TeamComponent'
+
 //Import components that you create here
 
 function LandingPage(){
     return(
-        
-        <Explanation/>
-
+        <div>
+            <Explanation/>
+            <TeamComponent />
+        </div>
     )
 }
 

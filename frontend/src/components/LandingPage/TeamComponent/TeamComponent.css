@@ -1,0 +1,20 @@
+.gitLink {
+    height: 32px;
+    width: 32px;
+}
+
+.rowSizing {
+    margin: 3rem 1rem 0 1rem;
+}
+
+.teamHeader {
+    padding-top: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.mainDiv {
+    background-color: #21242b;
+    padding-bottom: 4rem;
+}
