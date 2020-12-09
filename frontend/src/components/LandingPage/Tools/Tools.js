@@ -6,7 +6,7 @@ import Tool from "./SingleCollapse"
 function Tools(props) {
 
     return(
-        <div class = "container">
+        <div >
             {/*Takes each Tool object in the array and creates a single collapse component*/}
                 {props.toolsList.map(tool => (
                     <SingleCollapse name = {tool.name} info = {tool.description}/>  
