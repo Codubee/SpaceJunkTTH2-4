@@ -1,0 +1,37 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #4c1e3c;
+    color: #fff;
+}
+nav .logo{
+    font-size: 30px;
+    font-weight:700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+nav .nav-links{
+    display: flex;
+    width: 35%;
+}
+nav .nav-links a{
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+nav .nav-links a:hover{
+    border-bottom: 1px 
+    solid #fff;
+}
