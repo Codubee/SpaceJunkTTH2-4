@@ -11,6 +11,7 @@ app.get('/',(req,res)=>{
     res.send('Hello world');
 })
 
+//req == body with contains the imageURL aka the url of the image we want to analyze
 app.post('/imageAnalyzer', (req, res) =>{
 
     const body = req.body
@@ -18,13 +19,15 @@ app.post('/imageAnalyzer', (req, res) =>{
     .then(response =>{
         console.log("This is the body:")
         console.log(body)
+
+        //response.data contains various infomation about what the analyzer gathered from the image
         console.log("\nThis is the response")
-        console.log(response.data.tags)
-        console.log(response.data.captions[0].text)
+        console.log(response.data.tags)                 //tags seems to be key-words such as "space" or "planet"
+        console.log(response.data.captions[0].text)     //captions is an array and text in each element of the array seems to be a sentence descrbing the image such as "planet orbiting a star"
         res.status(200).json(response.data)
     })
     .catch(error => {
-        //console.log(error)
+        console.log(error)
         res.status(400).json({error: "An error occured"})
     })
 })
