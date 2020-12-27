@@ -1,0 +1,41 @@
+.main{
+    background-color: #1c1026;
+    padding-bottom: 20;
+}
+.title{
+    color: #7a748c;
+    font-size: 40;
+    text-align: center;
+    margin-top: 5;
+}
+.mainText{
+    color: #1c1026;
+    font-size: 40;
+    text-align: left;
+}
+.featureTitleText{
+    color: #1c1026;
+    font-size: 40;
+    text-align: left;
+    margin-right: 5;
+}
+.inRow{
+    display: flex;
+    flex-direction: row;
+}
+.picStyle{
+    width: 128px;
+    height: 128px;
+    margin-right: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.mediaStyle{
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: #7a748c;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}

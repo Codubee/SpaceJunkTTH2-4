@@ -1,10 +1,20 @@
 import React from 'react'
-//Import components that you create here
+import Tools from './Tools/Tools'
+import {ToolsInfo} from './Tools/ToolsInfo'
+import Explanation from './Explanation/Explanation'
+import TeamComponent from './TeamComponent/TeamComponent'
+import Features from './Features/Features'
 
 function LandingPage(){
+    
+    //Turns all of those Tool objects into collapse components using the Tools component
     return(
-        //Use components that you import here
-        <></>
+        <div>
+            <Explanation/>
+            <Features/>
+            <Tools toolsList = {ToolsInfo}/>
+            <TeamComponent />
+        </div>
     )
 }
 
