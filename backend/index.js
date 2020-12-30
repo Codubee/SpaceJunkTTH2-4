@@ -8,8 +8,8 @@ const port = 8080;
 
 app.get('/picOfTheDay', (req, res) => {
 
-    axios.get("https://api.nasa.gov/planetary/apod?api_key=${process.env.ApiKeyPOTD}").then((response)=>{
-
+    axios.get("https://api.nasa.gov/planetary/apod?api_key="+process.env.ApiKeyPOTD)
+    .then((response)=>{
         const url = response.data.url;
         res.send(url);
         res.status(200).json(response.data.url);
