@@ -6,9 +6,23 @@ app.use(express.json())
 
 const port = 8080;
 
-app.get('/',(req,res)=>{
-    res.send('Hello world');
-})
+app.get('/picOfTheDay', (req, res) => {
+
+    axios.get("https://api.nasa.gov/planetary/apod?api_key="+process.env.ApiKeyPOTD)
+    .then((response)=>{
+        const url = response.data.url;
+        res.send(url);
+        res.status(200).json(response.data.url);
+
+    }).catch((error)=>{
+
+        console.log(error);
+        res.status(400).json({error: 'An error has occurred'});
+
+    });
+
+});
+
 
 
 //Get Mars photo
