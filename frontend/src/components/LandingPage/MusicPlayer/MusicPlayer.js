@@ -11,7 +11,7 @@ function MusicPlayer() {
   return (
     <div class = "player">
       
-      <ReactPlayer width = '100%' height = '640px'url="https://soundcloud.com/electromum/sets/scifi"/>
+      <ReactPlayer width = '100%' height = '640px'url="https://soundcloud.com/user-893340458/sets/spacejunk2020"/>
     </div>
   )
 }
