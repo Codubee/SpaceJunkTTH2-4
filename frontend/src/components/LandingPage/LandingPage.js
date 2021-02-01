@@ -4,6 +4,7 @@ import {ToolsInfo} from './Tools/ToolsInfo'
 import Explanation from './Explanation/Explanation'
 import TeamComponent from './TeamComponent/TeamComponent'
 import Features from './Features/Features'
+import MusicPlayer from './MusicPlayer/MusicPlayer'
 
 function LandingPage(){
     
@@ -13,7 +14,9 @@ function LandingPage(){
             <Explanation/>
             <Features/>
             <Tools toolsList = {ToolsInfo}/>
-            <TeamComponent />
+            <MusicPlayer/>
+            <TeamComponent/>
+            
         </div>
     )
 }
